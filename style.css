@@ -1,4 +1,5 @@
-/*whole page is wrapped in the container index.html */
+/* going to use a grid layout */
+
 .container {
   height: 1000px;
   display: grid;
@@ -11,11 +12,9 @@
     "footer";
 }
 
-/*every thing from navbar to .column a: hover is styling for the nav */
-
 .navbar {
   grid-area: navbar;
-  border: 1px solid black;
+
   overflow: hidden;
   background-color: #333;
   font-family: arial;
@@ -90,7 +89,7 @@
 
 header {
   grid-area: header;
-  border: 1px solid black;
+
   background-image: url("images/walking-port.jpg");
   background-size: cover;
   background-position: center;
@@ -144,7 +143,6 @@ footer {
   grid-area: footer;
   background-color: #333;
   text-align: center;
-  border: 1px solid black;
 }
 .photo {
   width: 40%;
@@ -170,4 +168,25 @@ td {
 }
 h4 {
   color: white;
+}
+/* for phone screens */
+@media screen and (max-width: 600px) {
+  .container {
+    height: 1200px;
+  }
+  main {
+    display: block;
+  }
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
 }
