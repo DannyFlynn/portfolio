@@ -212,6 +212,8 @@ h4 {
   color: black;
 }
 
+/*projects.html*/
+
 /* for phone screens  */
 @media screen and (max-width: 600px) {
   .container {
@@ -237,7 +239,20 @@ h4 {
     flex-direction: column;
     height: 70%;
   }
-  /*contact html needs adjusting tablet size as it looks squashed in between phone and laptop*/
+
+  .contact-one,
+  .contact-two,
+  .contact-three {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+  }
   .contact-one,
   .contact-two,
   .contact-three {
